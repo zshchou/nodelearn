@@ -1,0 +1,32 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='description', content='')
+    meta(name='author', content='')
+    
+    title= title
+    
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/dashboard.css')
+    link(rel='stylesheet', href='/css/normalize.css')
+    
+    // 新 Bootstrap 核心 CSS 文件
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    // 可选的Bootstrap主题文件（一般不用引入）
+    link(rel="stylesheet", href="/css/bootstrap-theme.min.css")    
+    
+  body
+    block content    
+    
+    // jQuery文件。务必在bootstrap.min.js 之前引入
+    script(src="/js/jquery.min.js")
+    // 最新的 Bootstrap 核心 JavaScript 文件
+    script(src="/js/bootstrap.min.js")
+    script(src='/js/holder.js')
+    script(src='/js/global.js')
+    

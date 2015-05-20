@@ -1,0 +1,66 @@
+extends layout2
+
+block content
+    .container
+        .table-responsive
+            table.table.table-condensed
+                thead
+                    tr(bgcolor='#DAE8F6')
+                        td(width='80') test1
+                        td test2
+                        td test3
+                        td test4
+                        td test5
+                tbody
+                    tr
+                        td.active test1
+                        td.success test2
+                        td.warning test3
+                        td.danger test4
+                        td.info test5
+        h2 User Info
+        p.alert-link
+            strong Name:
+            |  <span id='userInfoName'></span>
+            br
+            strong Age:
+            |  <span id='userInfoAge'></span>
+            br
+
+        dl.dl-horizontal.alert-info
+            dt Gender:
+            dd <span id='userInfoGender'></span>
+            dt Location:
+            dd <span id='userInfoLocation'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 User List
+        .table-responsive
+            table.table.table-hover
+                thead
+                    tr
+                        td.active #
+                        td.success Name
+                        td.warning Email
+                        td.info Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Add User
+        fieldset
+            input#inputUserName(type='text', placeholder='Username')
+            //| &nbsp; &nbsp; &nbsp;
+            input#inputUserEmail(type='text', placeholder='Email')
+            br
+            input#inputUserFullname(type='text', placeholder='Full Name')
+            //| &nbsp; &nbsp; &nbsp;
+            input#inputUserAge(type='text', placeholder='Age')
+            br
+            input#inputUserLocation(type='text', placeholder='Location')
+            //| &nbsp; &nbsp; &nbsp;
+            input#inputUserGender(type='text', placeholder='gender')
+            br
+            button#btnAddUser Add User
+        // /ADD USER
