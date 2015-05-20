@@ -6,7 +6,7 @@ block content
             table.table.table-condensed
                 thead
                     tr(bgcolor='#DAE8F6')
-                        td(width='80') test1
+                        td(width='80', padding='30') test1
                         td test2
                         td test3
                         td test4
@@ -19,19 +19,21 @@ block content
                         td.danger test4
                         td.info test5
         h2 User Info
-        p.alert-link
+        p.bg-danger
             strong Name:
-            |  <span id='userInfoName'></span>
+            span#userInfoName
+            br
             br
             strong Age:
             |  <span id='userInfoAge'></span>
             br
-
-        dl.dl-horizontal.alert-info
-            dt Gender:
-            dd <span id='userInfoGender'></span>
-            dt Location:
-            dd <span id='userInfoLocation'></span>
+            dl.dl-horizontal.input-group-addon
+                dt Gender:
+                dd
+                    span#userInfoGender
+                br
+                dt Location:
+                dd <span id='userInfoLocation'></span>
         // /USER INFO
 
         // USER LIST
@@ -62,5 +64,5 @@ block content
             //| &nbsp; &nbsp; &nbsp;
             input#inputUserGender(type='text', placeholder='gender')
             br
-            button#btnAddUser Add User
+            button#btnAddUser.btn.btn-primary.btn-block Add User
         // /ADD USER

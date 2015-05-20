@@ -7,6 +7,11 @@ body {
   padding-top: 50px;
 }
 
+form {
+  background: #3ff;
+  font-color: #000;
+}
+
 
 /*
  * Global add-ons

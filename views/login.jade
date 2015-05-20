@@ -1,101 +1,264 @@
 extends layout2
 
 block content
-	.container
-		.table-responsive
-			table.table.table-hover
-				thead
-					tr
-						td.active test1
-						td.success test2
-						td.warning test3
-						td.danger test4
-						td.info test5
-				tbody
-					tr
-						td.active test1
-						td.success test2
-						td.warning test3
-						td.danger test4
-						td.info test5
+    .container
+        .table-responsive
+            table.table.table-hover
+                thead
+                    tr
+                        td.active test1
+                        td.success test2
+                        td.warning test3
+                        td.danger test4
+                        td.info test5
+                tbody
+                    tr
+                        td.active test1
+                        td.success test2
+                        td.warning test3
+                        td.danger test4
+                        td.info test5
 
-		h6 h6. Bootstrap heading
-		p.text-left Left aligned text.
-		p.text-center Center aligned text.
-		p.text-right Right aligned text.
-		p.text-justify Justified text.
-		p.text-nowrap No wrap text.		
-		p.text-lowercase Lowercased text.
-		p.text-uppercase Uppercased text.
-		p.text-capitalize Capitalized text.
-		
-		abbr(title="attribute") attr
-		br
-		abbr.initialism(title="HyperText Markup Language") HTML
-		br
-		
-		address
-			strong Twitter, Inc.
-			br
-			| 795 Folsom Ave, Suite 600
-			br
-			| San Francisco, CA 94107
-			br
-			abbr(title="Phone") P:
-			| (123) 456-7890
-		address
-			strong Full Name
-			br
-			a(href="mailto:#") first.last@example.com	
-			
-		blockquote
-			p
-				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-	
-		blockquote.blockquote-reverse
-			p
-				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-			footer
-				| Someone famous in
-				cite(title="Source Title")  Source Title
-		dl.dl-horizontal
-			dt Nullam：
-			dd Cum sociis 
-			dt nascetur：
-			dd jack
-		u Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, 
-		small nisi erat  
-		em porttitor 
-		small ligula 
-		strong eget lacinia odio sem nec elit.
-		<br>
-		s You can use the mark tag to 
-		mark highlight
-		ins text.
-		
-		| For example,
-		code &#60;section&#62;
-		| should be wrapped as inline.
-		
-		| To switch directories, type
-		kbd alt+.
-		| followed by the name of the directory.
-		br
-		| To edit settings, press
-		kbd
-			kbd ctrl
-			| +
-			kbd ,
-		pre.
-			<p>Sample text here...</p>
-		pre.
-			test  
-		var y
-		| =
-		var m
-		var x
-		| +
-		var b
-		
-		samp This text is meant to be treated as sample output from a computer program.
-		
+        form(background="#33244")
+            .form-group
+                label(for="exampleInputEmail1") Email address
+                input#exampleInputEmail1.form-control(type="email", placeholder="Enter email")
+            .form-group
+                label(for="exampleInputPassword1") Password
+                input#exampleInputPassword1.form-control(type="password", placeholder="Password")
+            .form-group
+                label(for="exampleInputFile") File input
+                input#exampleInputFile(type="file")
+                p.help-block Example block-level help text here.
+            .checkbox
+                label
+                    input(type="checkbox")
+                    | Check me out
+            button.btn.btn-default(type="submit") Submit
+        form.form-horizontal
+            .form-group
+                label.col-sm-2.control-label Email
+                .col-sm-10
+                    p.form-control-static email@example.com
+            .form-group
+                label.col-sm-2.control-label(for="inputEmail3") Email
+                .col-sm-10
+                    input#inputEmail3.form-control(type="email", placeholder="Email")
+            .form-group
+                label.col-sm-2.control-label(for="inputPassword3") Password
+                .col-sm-10
+                    input#inputPassword3.form-control(type="password", placeholder="Password")
+            .form-group
+                .col-sm-offset-2.col-sm-10
+                    .checkbox
+                        label
+                            input(type="checkbox")
+                            | Remember me
+            .form-group
+                .col-sm-offset-2.col-sm-10
+                    button.btn.btn-default(type="submit") Sign in
+
+        h6 h6. Bootstrap heading
+        textarea.form-control(rows="3", placeholder="输入意见和建议")
+
+        .checkbox
+            label
+                input(type="checkbox", value="")
+                | Option one is this and that&#8212;be sure to include why it"s great
+        .checkbox.disabled
+            label
+                input(type="checkbox", value="", disabled="")
+                | Option two is disabled
+        .radio
+            label
+                input#optionsRadios1(type="radio", name="optionsRadios", value="option1", checked="")
+                | Option one is this and that&#8212;be sure to include why it"s great
+        .radio
+            label
+                input#optionsRadios2(type="radio", name="optionsRadios", value="option2")
+                | Option two can be something else and selecting it will deselect option one
+        .radio.disabled
+            label
+                input#optionsRadios3(type="radio", name="optionsRadios", value="option3", disabled="")
+                | Option three is disabled
+        p.text-left Left aligned text.
+        label.checkbox-inline
+            input#inlineCheckbox1(type="checkbox", value="option1")
+            | 1
+        label.checkbox-inline
+            input#inlineCheckbox2(type="checkbox", value="option2")
+            | 2
+        label.checkbox-inline
+            input#inlineCheckbox3(type="checkbox", value="option3")
+            | 3
+        br
+        label.radio-inline
+            input#inlineRadio1(type="radio", name="inlineRadioOptions", value="option1")
+            | 1
+        label.radio-inline
+            input#inlineRadio2(type="radio", name="inlineRadioOptions", value="option2")
+            | 2
+        label.radio-inline
+            input#inlineRadio3(type="radio", name="inlineRadioOptions", value="option3")
+            | 3
+
+        p.text-center Center aligned text.
+        select.form-control(multiple="")
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+        p.text-right Right aligned text.
+        .form-group.has-success.has-feedback
+            label.control-label(for="inputSuccess2") Input with success
+            input#inputSuccess2.form-control(type="text", aria-describedby="inputSuccess2Status")
+            span.glyphicon.glyphicon-ok.form-control-feedback(aria-hidden="true")
+            span#inputSuccess2Status.sr-only (success)
+        .form-group.has-warning.has-feedback
+            label.control-label(for="inputWarning2") Input with warning
+            input#inputWarning2.form-control(type="text", aria-describedby="inputWarning2Status")
+            span.glyphicon.glyphicon-warning-sign.form-control-feedback(aria-hidden="true")
+            span#inputWarning2Status.sr-only (warning)
+        .form-group.has-error.has-feedback
+            label.control-label(for="inputError2") Input with error
+            input#inputError2.form-control(type="text", aria-describedby="inputError2Status")
+            span.glyphicon.glyphicon-remove.form-control-feedback(aria-hidden="true")
+            span#inputError2Status.sr-only (error)
+        .form-group.has-success.has-feedback
+            label.control-label(for="inputGroupSuccess1") Input group with success
+            .input-group
+                span.input-group-addon @
+                input#inputGroupSuccess1.form-control(type="text", aria-describedby="inputGroupSuccess1Status")
+            span.glyphicon.glyphicon-ok.form-control-feedback(aria-hidden="true")
+            span#inputGroupSuccess1Status.sr-only (success)
+        .has-success
+            .checkbox
+                label
+                    input#checkboxSuccess(type="checkbox", value="option1")
+                    | Checkbox with success
+        .has-warning
+            .checkbox
+                label
+                    input#checkboxWarning(type="checkbox", value="option1")
+                    | Checkbox with warning
+        .has-error
+            .checkbox
+                label
+                    input#checkboxError(type="checkbox", value="option1")
+                    | Checkbox with error
+
+        p.text-justify Justified text.
+        .pull-left
+            p.text-nowrap No wrap text.
+        .pull-right
+            p.text-lowercase Lowercased text.
+        p.text-uppercase Uppercased text.
+        h1.text-hide Custom heading
+        p.text-capitalize Capitalized text.
+        a.sr-only.sr-only-focusable(href="#content") Skip to main content
+
+        abbr(title="attribute") attr
+        br
+        abbr.initialism(title="HyperText Markup Language") HTML
+        br
+
+        address
+            strong Twitter, Inc.
+            br
+            | 795 Folsom Ave, Suite 600
+            br
+            | San Francisco, CA 94107
+            br
+            abbr(title="Phone") P:
+            | (123) 456-7890
+        address
+            strong Full Name
+            br
+            a(href="mailto:#") first.last@example.com
+
+        blockquote
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+
+        blockquote.blockquote-reverse
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            footer
+                | Someone famous in
+                cite(title="Source Title")  Source Title
+        dl.dl-horizontal
+            dt Nullam：
+            dd Cum sociis
+            dt nascetur：
+            dd jack
+        u Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus,
+        small nisi erat
+        form.form-inline
+            .form-group.has-success.has-feedback
+                label.control-label(for="inputSuccess4") Input with success
+                input#inputSuccess4.form-control(type="text", aria-describedby="inputSuccess4Status")
+                span.glyphicon.glyphicon-ok.form-control-feedback(aria-hidden="true")
+                span#inputSuccess4Status.sr-only (success)
+        form.form-inline
+            .form-group.has-success.has-feedback
+                label.control-label(for="inputGroupSuccess3") Input group with success
+                .input-group
+                    span.input-group-addon @
+                    input#inputGroupSuccess3.form-control(type="text", aria-describedby="inputGroupSuccess3Status")
+                span.glyphicon.glyphicon-ok.form-control-feedback(aria-hidden="true")
+                span#inputGroupSuccess3Status.sr-only (success)
+
+        em porttitor
+        a.btn.btn-default(href="#", role="button") Link
+        button.btn.btn-default(type="submit") Button
+        input.btn.btn-default(type="button", value="Input")
+        input.btn.btn-default(type="submit", value="Submit")
+        small ligula
+        strong eget lacinia odio sem nec elit.
+        <br>
+        s You can use the mark tag to
+        mark highlight
+        img.img-rounded(src="...", alt="...")
+        img.img-circle(src="...", alt="...")
+        img.img-thumbnail(src="...", alt="...")
+        ins text.
+        // Standard button
+        button.btn.btn-default(type="button") &#65288;&#40664;&#35748;&#26679;&#24335;&#65289;Default
+        // Provides extra visual weight and identifies the primary action in a set of buttons
+        button.btn.btn-primary(type="button") &#65288;&#39318;&#36873;&#39033;&#65289;Primary
+        // Indicates a successful or positive action
+        button.btn.btn-success(type="button") &#65288;&#25104;&#21151;&#65289;Success
+        // Contextual button for informational alert messages
+        button.btn.btn-info(type="button") &#65288;&#19968;&#33324;&#20449;&#24687;&#65289;Info
+        // Indicates caution should be taken with this action
+        button.btn.btn-warning(type="button") &#65288;&#35686;&#21578;&#65289;Warning
+        // Indicates a dangerous or potentially negative action
+        button.btn.btn-danger(type="button") &#65288;&#21361;&#38505;&#65289;Danger
+        // Deemphasize a button by making it look like a link while maintaining button behavior
+        button.btn.btn-link(type="button") &#65288;&#38142;&#25509;&#65289;Link
+        | For example,
+        code &#60;section&#62;
+        | should be wrapped as inline.
+
+        | To switch directories, type
+        kbd alt+.
+        | followed by the name of the directory.
+        br
+        | To edit settings, press
+        kbd
+            kbd ctrl
+            | +
+            kbd ,
+        pre.
+            <p>Sample text here...</p>
+        pre.
+            test
+        var y
+        | =
+        var m
+        var x
+        | +
+        var b
+
+        samp This text is meant to be treated as sample output from a computer program.
