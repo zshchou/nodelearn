@@ -16,9 +16,11 @@ router.get('/userlist', function(req, res, next) {
   });*/
 
   db.userlist.find({}, function (err, users) {
-	  users.forEach(function(element) {
-	  console.log(element);
-	}, this);
+	  if (users) {
+		  users.forEach(function (element) {
+			  console.log(element);
+		  }, this);
+	  }
 	  res.json(users);
   });
 });
