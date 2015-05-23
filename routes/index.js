@@ -11,11 +11,11 @@ router.post('/', function (req, res, next) {
   res.json(req.body);
 });
 
-router.get('/reg', function (req, res) {
-  res.render('reg', { title: '注册' })
+router.get('/regis', function (req, res) {
+  res.render('regis', { title: '注册' })
 });
 
-router.post('/reg', function (req, res) {
+router.post('/regis', function (req, res) {
   
 })
 
@@ -30,6 +30,10 @@ router.post('/login', function (req, res) {
 router.get('/logout', function (req, res) {
   
 });
+
+router.get('/form', function(reg, res){
+  res.render('form', {title: 'FORM演示'})
+})
 
 
 router.get('/post', function (req, res) {

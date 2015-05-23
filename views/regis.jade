@@ -1,0 +1,193 @@
+extends layout2
+
+block content
+    .container
+        .row
+            .span12
+                .page-header
+                    h1
+                        | 黑天糊地理财网
+                        small 看理财，就这么任性
+                #carousel-320492.carousel.slide
+                    ol.carousel-indicators
+                        li.active(data-slide-to='0', data-target='#carousel-320492')
+                        li(data-slide-to='1', data-target='#carousel-320492')
+                        li(data-slide-to='2', data-target='#carousel-320492')
+                    .carousel-inner
+                        .item.active.left
+                            img(alt='', src='img/1.jpg')
+                            .carousel-caption
+                                h4
+                                    | 棒球
+                                p
+                                    | 棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
+                        .item.next.left
+                            img(alt='', src='img/2.jpg')
+                            .carousel-caption
+                                h4
+                                    | 冲浪
+                                p
+                                    | 冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
+                        .item
+                            img(alt='', src='img/3.jpg')
+                            .carousel-caption
+                                h4
+                                    | 自行车
+                                p
+                                    | 以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。
+                    a.left.carousel-control(data-slide='prev', href='#carousel-320492') ‹
+                    a.right.carousel-control(data-slide='next', href='#carousel-320492') ›
+                ul.breadcrumb
+                    li
+                        a(href='#') 主页
+                        span.divider /
+                    li
+                        a(href='#') 类目
+                        span.divider /
+                    li.active
+                        | 主题
+                ul.nav.nav-tabs
+                    li.active
+                        a(href='#') 首页
+                    li
+                        a(href='#') 资料
+                    li.disabled
+                        a(href='#') 信息
+                    li.dropdown.pull-right
+                        a.dropdown-toggle(href='#', data-toggle='dropdown')
+                            | 下拉
+                            strong.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='#') 操作
+                            li
+                                a(href='#') 设置栏目
+                            li
+                                a(href='#') 更多设置
+                            li.divider
+                            li
+                                a(href='#') 分割线
+                ul.thumbnails
+                    li.span4
+                        .thumbnail
+                            img(alt='300x200', src='img/people.jpg')
+                            .caption
+                                h3
+                                    | 冯诺尔曼结构
+                                p
+                                    | 也称普林斯顿结构，是一种将程序指令存储器和数据存储器合并在一起的存储器结构。程序指令存储地址和数据存储地址指向同一个存储器的不同物理位置。
+                                p
+                                    a.btn.btn-primary(href='#') 浏览
+                                    a.btn(href='#') 分享
+                    li.span4
+                        .thumbnail
+                            img(alt='300x200', src='img/city.jpg')
+                            .caption
+                                h3
+                                    | 哈佛结构
+                                p
+                                    | 哈佛结构是一种将程序指令存储和数据存储分开的存储器结构，它的主要特点是将程序和数据存储在不同的存储空间中，进行独立编址。
+                                p
+                                    a.btn.btn-primary(href='#') 浏览
+                                    a.btn(href='#') 分享
+                    li.span4
+                        .thumbnail
+                            img(alt='300x200', src='img/sports.jpg')
+                            .caption
+                                h3
+                                    | 改进型哈佛结构
+                                p
+                                    | 改进型的哈佛结构具有一条独立的地址总线和一条独立的数据总线，两条总线由程序存储器和数据存储器分时复用，使结构更紧凑。
+                                p
+                                    a.btn.btn-primary(href='#') 浏览
+                                    a.btn(href='#') 分享
+        .row
+            .span10
+                table.table.table-condensed
+                    thead
+                        tr
+                            th
+                                | 编号
+                            th
+                                | 产品
+                            th
+                                | 交付时间
+                            th
+                                | 状态
+                    tbody
+                        tr
+                            td 1
+                            td TB - Monthly
+                            td 01/04/2012
+                            td Default
+                        tr.success
+                            td
+                                | 1
+                            td
+                                | TB - Monthly
+                            td
+                                | 01/04/2012
+                            td
+                                | Approved
+                        tr.error
+                            td
+                                | 2
+                            td
+                                | TB - Monthly
+                            td
+                                | 02/04/2012
+                            td
+                                | Declined
+                        tr.warning
+                            td
+                                | 3
+                            td
+                                | TB - Monthly
+                            td
+                                | 03/04/2012
+                            td
+                                | Pending
+                        tr.info
+                            td
+                                | 4
+                            td
+                                | TB - Monthly
+                            td
+                                | 04/04/2012
+                            td
+                                | Call in to confirm
+                .pagination
+                    ul
+                        li
+                            a(href='#') 上一页
+                        li
+                            a(href='#') 1
+                        li
+                            a(href='#') 2
+                        li
+                            a(href='#') 3
+                        li
+                            a(href='#') 4
+                        li
+                            a(href='#') 5
+                        li
+                            a(href='#') 下一页
+            .span2
+                ul.nav.nav-list
+                    li.nav-header
+                        | 列表标题
+                    li.active
+                        a(href='#') 首页
+                    li
+                        a(href='#') 库
+                    li
+                        a(href='#') 应用
+                    li.nav-header
+                        | 功能列表
+                    li
+                        a(href='#') 资料
+                    li
+                        a(href='#') 设置
+                    li.divider
+                    li
+                        a(href='#') 帮助

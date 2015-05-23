@@ -2,8 +2,8 @@ doctype html
 html(lang="zh-CN")
   head
     meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     meta(name='description', content='')
     meta(name='author', content='')
@@ -13,18 +13,23 @@ html(lang="zh-CN")
     link(rel='stylesheet', href='/css/dashboard.css')
     link(rel='stylesheet', href='/css/normalize.css')
     //link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel="stylesheet/less", type="text/css", href='/stylesheets/style.less')
-    
+    //link(rel="stylesheet/less", type="text/css", href='/stylesheets/style.less')
+
+    // layout http://www.bootcss.com/p/layoutit/
+    link(rel="stylesheet", href="/css/bootstrap-combined.min.css")
+    link(rel="stylesheet", href="/css/layoutit.css")
+
     // 新 Bootstrap 核心 CSS 文件
     link(rel="stylesheet", href="/css/bootstrap.min.css")
     // 可选的Bootstrap主题文件（一般不用引入）
     link(rel="stylesheet", href="/css/bootstrap-theme.min.css")
 
-    script(src="/js/less.min.js", type="text/javascript")
+    link(rel="stylesheet", href="/css/bootstrap-combined.min.css")
 
   body
     block content    
-    
+
+    script(src="/js/less.min.js", type="text/javascript")
     // jQuery文件。务必在bootstrap.min.js 之前引入
     script(src="/js/jquery.min.js")
     // 最新的 Bootstrap 核心 JavaScript 文件

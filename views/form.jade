@@ -1,0 +1,51 @@
+extends layout2
+
+block content
+
+form.form-horizontal
+    fieldset
+        #legend
+            legend &#34920;&#21333;&#21517;
+        .control-group
+            // Text input
+            label.control-label(for="input01") Text input
+            .controls
+                input.input-xlarge(type="text", placeholder="placeholder")
+                p.help-block Supporting help text
+        .control-group
+            label.control-label Radio buttons
+            .controls
+                // Multiple Radios
+                label.radio
+                    input(type="radio", value="Option one", name="group", checked="checked")
+                    | Option one
+                label.radio
+                    input(type="radio", value="Option two", name="group")
+                    | Option two
+        .control-group
+            // Prepended text
+            label.control-label Prepended text
+            .controls
+                .input-prepend
+                    span.add-on ^_^
+                    input#prependedInput.span2(type="text", placeholder="placeholder")
+                p.help-block Supporting help text
+        .control-group
+            // Select Multiple
+            label.control-label Select - Multiple
+            .controls
+                select.input-xlarge(multiple="multiple")
+                    option Enter
+                    option Your
+                    option Options
+                    option Here!
+        .control-group
+            // Prepended checkbox
+            label.control-label Prepended checkbox
+            .controls
+                .input-prepend
+                    span.add-on
+                        label.checkbox
+                            input(type="checkbox")
+                    input.span2(type="text", placeholder="placeholder")
+                p.help-block Supporting help text
