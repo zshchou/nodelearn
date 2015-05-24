@@ -1,0 +1,191 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title 关于Bootstrap中文网
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。目前，Bootstrap最新版本为3.0 。Bootstrap中文网致力于为广大国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这一框架。')
+    meta(name='keywords', content='Bootstrap,CSS,CSS框架,CSS framework,javascript,bootcss,bootstrap开发,bootstrap代码,bootstrap入门')
+    meta(name='author', content='Bootstrap中文网')
+    meta(name='robots', content='index,follow')
+    meta(name='application-name', content='bootcss.com')
+    meta(property='qc:admins', content='1603466166416277433363757477167')
+    // Site CSS
+    link(href='http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css', rel='stylesheet')
+    link(href='http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='http://static.bootcss.com/www/assets/css/site.min.css?v5', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='/assets/js/html5shiv.min.js?v=f3008b4099')
+      script(src='/assets/js/respond.min.js?v=f3008b4099')
+    // Favicons
+    link(rel='apple-touch-icon-precomposed', href='http://static.bootcss.com/www/assets/ico/apple-touch-icon-precomposed.png')
+    link(rel='shortcut icon', href='http://static.bootcss.com/www/assets/ico/favicon.png')
+    script.
+        var _hmt = _hmt || [];
+    link(rel='canonical', href='http://www.bootcss.com/about/')
+    meta(name='generator', content='Ghost 0.5')
+    link(rel='alternate', type='application/rss+xml', title='Bootstrap中文网', href='http://www.bootcss.com/rss/')
+    script.
+        var qqgroup = '248557313';
+.navbar.navbar-inverse.navbar-fixed-top
+    .container
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand.hidden-sm(href='http://www.bootcss.com') Bootstrap中文网
+        .navbar-collapse.collapse(role='navigation')
+            ul.nav.navbar-nav
+                li.dropdown.hidden-sm.hidden-md
+                    a.dropdown-toggle(href='javascript:void(0)', data-toggle='dropdown')
+                        | Bootstrap2中文文档
+                        b.caret
+                    ul.dropdown-menu
+                        li
+                            a(href='http://v2.bootcss.com/getting-started.html', target='_blank') 起步
+                        li
+                            a(href='http://v2.bootcss.com/scaffolding.html', target='_blank') 脚手架
+                        li
+                            a(href='http://v2.bootcss.com/base-css.html', target='_blank') 基本CSS样式
+                        li
+                            a(href='http://v2.bootcss.com/components.html', target='_blank') 组件
+                        li
+                            a(href='http://v2.bootcss.com/javascript.html', target='_blank') JavaScript插件
+                        li
+                            a(href='http://v2.bootcss.com/customize.html', target='_blank') 定制
+                li.dropdown
+                    a.dropdown-toggle(href='javascript:void(0)', data-toggle='dropdown')
+                        | Bootstrap3中文文档
+                        b.caret
+                    ul.dropdown-menu
+                        li
+                            a(href='http://v3.bootcss.com/getting-started/', target='_blank') 起步
+                        li
+                            a(href='http://v3.bootcss.com/css/', target='_blank') CSS
+                        li
+                            a(href='http://v3.bootcss.com/components/', target='_blank') 组件
+                        li
+                            a(href='http://v3.bootcss.com/javascript/', target='_blank') JavaScript插件
+                        li
+                            a(href='http://v3.bootcss.com/customize/', target='_blank') 定制
+                li
+                    a#btn-jike-video(href='http://e.jikexueyuan.com/bootstrap.html?hmsr=bootstrap_guide_bsevent_e', target='_blank', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'Bootstrap视频教程'])") Bootstrap视频教程
+                li
+                    a(href='/p/lesscss/', target='_blank', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'less'])") Less 教程
+                li
+                    a(href='http://www.jquery123.com/api/', target='_blank', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])") jQuery API
+                li
+                    a(href='http://expo.bootcss.com', target='_blank', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'expo'])") 网站实例
+                li
+                    a(href='http://www.liepin.com/event/bootstrap/index.shtml?mscid=b_o_0001', target='_blank', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-高薪工作'])") 高薪工作
+            ul.nav.navbar-nav.navbar-right.hidden-sm
+                li
+                    a(href='/about/', onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])") 关于
+//
+  Subhead
+  ==================================================
+header.jumbotron.subhead
+    .container
+        h1 关于Bootstrap中文网
+        p.lead Bootstrap中文网致力于前端开发推广，坚持分享、开放的互联网精神
+.container
+    //
+      Docs nav
+      ==================================================
+    .row
+        .col-md-3
+            #toc.bc-sidebar
+        .col-md-9
+            article.post.page
+                section.post-content
+                    h2(id='') 关于我们
+                    p
+                        | Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（
+                        a(href='http://weibo.com/bootcss') @bootcss
+                        | ），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。
+                    h2#bootstrap 展示你的Bootstrap作品
+                    p 你是Bootstrap粉丝吗？你正在用Bootstrap做开发吗？你开发的网站是 Powered By Bootstrap 的吗？那就把你的网站show出来吧！
+                    p
+                        | 凡是经过确认采用Bootstrap CSS框架的网站，我们会将你所提交网站的截图及介绍展示到“Bootstrap优站精选”列表中，并有机会在 Bootstrap中文网 的首页进行推荐。
+                    blockquote
+                        p
+                            | 请发邮件到下面的邮箱，并在邮件标题上注明（Bootstrap网站作品提交 -- 网站名称或网址）。
+                            br
+                            |   Mail： admin@bootcss.com
+                    h2(id='') 加入我们
+                    p
+                        | Bootstrap中文网致力于前端开发推广，坚持分享、开放的互联网精神，旨在为广大前端攻城师、设计师提供交流的平台，如果你和我们有相同的目标，我们乐意一起携手前行。
+                    p 如果你也热爱前端开发、热爱 Bootstrap，有一颗创业的心，欢迎和我们联系，更欢迎你加入我们的团队！
+                    p
+                        | QQ: 124369963
+                        br
+                        | Mail: admin@bootcss.com
+footer.footer
+    .container
+        .row.footer-top
+            .col-sm-6.col-lg-6
+                h4
+                    img(src='http://static.bootcss.com/www/assets/img/logo.png')
+                p
+                    | 本网站所列开源项目的中文版文档全部由
+                    a(href='http://www.bootcss.com/') Bootstrap中文网
+                    | 成员翻译整理，并全部遵循
+                    a(href='http://creativecommons.org/licenses/by/3.0/', target='_blank') CC BY 3.0
+                    | 协议发布。
+            .col-sm-6.col-lg-5.col-lg-offset-1
+                .row.about
+                    .col-xs-3
+                        h4 关于
+                        ul.list-unstyled
+                            li
+                                a(href='/about/') 关于我们
+                            li
+                                a(href='/ad/') 广告合作
+                            li
+                                a(href='/links/') 友情链接
+                            li
+                                a(href='/hr/') 招聘
+                    .col-xs-3
+                        h4 联系方式
+                        ul.list-unstyled
+                            li
+                                a(href='http://weibo.com/bootcss', title='Bootstrap中文网官方微博', target='_blank') 新浪微博
+                            li
+                                a(href='mailto:admin@bootcss.com') 电子邮件
+                    .col-xs-3
+                        h4 旗下网站
+                        ul.list-unstyled
+                            li
+                                a(href='http://www.golaravel.com/', target='_blank') Laravel中文网
+                            li
+                                a(href='http://www.ghostchina.com/', target='_blank') Ghost中国
+                    .col-xs-3
+                        h4 赞助商
+                        ul.list-unstyled
+                            li
+                                a(href='http://www.ucloud.cn/', target='_blank') UCloud
+                            li
+                                a(href='https://www.upyun.com', target='_blank') 又拍云
+        hr
+        .row.footer-bottom
+            ul.list-inline.text-center
+                li
+                    a(href='http://www.miibeian.gov.cn/', target='_blank') 京ICP备11008151号
+                li 京公网安备11010802014853
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js')
+script(src='http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js')
+script(src='http://cdn.bootcss.com/unveil/1.3.0/jquery.unveil.min.js')
+script(src='http://cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js')
+script(src='http://cdn.bootcss.com/toc/0.3.2/toc.min.js')
+script(src='http://cdn.bootcss.com/jquery.matchHeight/0.5.2/jquery.matchHeight-min.js')
+script(src='http://static.bootcss.com/www/assets/js/site.min.js')
+script.
+    $(document).ready(function(){
+        $('#qqgroup').text(qqgroup);
+    });

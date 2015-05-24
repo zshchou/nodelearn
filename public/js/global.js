@@ -70,6 +70,7 @@ function showUserInfo(event) {
     $('#userInfoAge').text(thisUserObject.age);
     $('#userInfoGender').text(thisUserObject.gender);
     $('#userInfoLocation').text(thisUserObject.location);
+
 };
 
 // Delete User

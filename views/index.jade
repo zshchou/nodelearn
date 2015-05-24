@@ -66,3 +66,16 @@ block content
             br
             button#btnAddUser.btn.btn-primary.btn-block Add User
         // /ADD USER
+
+        #import(style='width:100%;height:100%;background:#fff;')
+            .event-android-top
+                a.button.diaRegBtn.is_not_login(href='javascript:void(0);', activity='')
+                    span 立即注册 开始学习
+                #onKeyLogin.onKeyLogin.is_not_login
+                    | 免注册，一键登录
+                    a(href='http://passport.jikexueyuan.com/connect/qq')
+                        img(src='./static/images/bootstrap/qq1.png', alt='qq登录')
+                    a(href='http://passport.jikexueyuan.com/connect/weixin')
+                        img(src='./static/images/bootstrap/wechatlogo.png', alt='微信登录')
+                    a(href='http://passport.jikexueyuan.com/connect/weibo')
+                        img(src='./static/images/bootstrap/weibologo.png', alt='微博登录')

@@ -35,6 +35,10 @@ router.get('/form', function(reg, res){
   res.render('form', {title: 'FORM演示'})
 })
 
+router.get('/about', function(reg, res){
+  res.render('about', {title: '关于'})
+})
+
 
 router.get('/post', function (req, res) {
   res.render('post', {title: 'post'})

@@ -1,0 +1,255 @@
+/**
+ *
+ * @authors FangYaFei (1120309265@qq.com)
+ * @date    2014-09-03 10:01:38
+ * @version $Id$
+ */
+body {min-width: 1100px;}
+a{text-decoration: none }
+p{text-align: center;}
+.cf {
+    zoom: 1;
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+a.button span {
+    color: #fff!important;
+}
+.mr-75
+{ margin-right: 75px; }
+.mb-50
+{ margin-bottom: 50px; }
+.mb-30
+{ margin-bottom: 30px; }
+.pl-20
+{ padding-left: 20px; }
+.pr-20
+{ padding-right: 20px; }
+.w-auto{background:#f6f6f6;width:100%;height:auto;overflow:hidden;}
+.event-android-top{ padding: 110px 0px 105px 0px; width: 929px; margin:0 auto;text-align: center; }
+.event-android-top a.button{width: 253px;height: 60px;line-height: 60px;text-align: center;font-size: 24px;background: #563d7c;font-weight: 600;display: block;border-radius: 6px;margin:0 auto;margin-top: 40px;}
+.envent-android-banner-one{height: 653px; background: url("./static/images/bootstrap/bootstrap-2fbg.png") no-repeat; }
+.envent-android-banner-one .i-inner{height: 634px; }
+.envent-android-banner-one .i-inner .i-san-white{width: 0;
+    height: 16px;margin:0 auto;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 16px solid white;
+}
+.envent-android-banner-one  .i-san-black{width: 0;
+    height: 16px;margin:0 auto;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 16px solid #614983;
+}
+.envent-android-banner-one .p1,.p2{text-align: center;}
+.envent-android-banner-one .p1{font-size: 40px;padding-top: 100px;color: #fff;}
+.envent-android-banner-one .p2{font-size: 18px;font-weight: 500;padding-top: 10px;width: 800px;margin:0 auto;color: #fff;}
+.one-bige-block
+{
+    margin: 90px auto;
+    width: 1100px;
+}
+.one-bige-block .one-bige-box
+{
+    float: left;
+    width: 315px;
+    text-align: center;
+}
+.one-bige-box .bige-box-tit{
+    display: inline-block;
+    width: 316px;
+    font-size: 40px;
+    line-height: 66px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.one-bige-box p
+{
+    font-size: 14px;
+    color: #fff;
+    line-height: 2em;
+}
+
+
+.event-android-teamVsJike{ margin: 0 auto; padding-top: 80px; width: 970px; height: auto;overflow: hidden;text-align: center;}
+.event-android-teamVsJike .p3{ text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: #000;}
+.event-android-teamVsJike .p4{color: #999999;
+    font-size: 18px;
+    padding-top: 30px; }
+.event-android-teamVsJike .p5 { color: #999; font-size: 24px; font-weight: normal; line-height: 2em; }
+.event-android-teamVsJike .p6 { color: #999; font-size: 24px; line-height: 4em; }
+.event-android-teamVsJike a.button:hover {background-color: #6f5598;}
+.event-android-teamVsJike a.button{ width: 260px;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19px;
+    background: #563d7c;
+    display: block;
+    border-radius: 6px;
+    line-height: 48px;
+    margin-top: 30px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+.event-android-teamVsJike a.button > span{ font-size: 19px; line-height: 51px; color: #FFF; }
+.event-android-teamVsJike img{margin-top: 60px;}
+
+.event-android-stepNine{width: 1022px;
+    height: 280px;
+    margin: 0 auto;
+    background: url("./static/images/bootstrap-2f3-a-nine.png") 0 0 no-repeat;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;}
+/*number*/
+.event-android-stepNine .number
+{width: 85px;
+    height: 85px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    color: #000;
+    font-size: 24px;
+    font-family: Arial;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;}
+.event-android-stepNine .number > div
+{
+    margin-top: 26px;
+    width: 77px;
+    font-size: 24px;
+    color: #141414;
+    font-family: Arial;
+    line-height: 0.8em;
+    font-weight: bold;
+}
+.event-android-stepNine .number > span
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #ff6600;
+    display: none;
+}
+/* .event-android-stepNine .number:hover{border: 3px solid #FF6600;color: #FF6600;} */
+.event-android-stepNine .number1,.number2,.number3,.number4,.number5,.number6,.number7,.number8,.number9,.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8,.text9,.day1,.day2,.day3,.day4,.day5,.day6,.day7,.day8,.day9{position: absolute;}
+.event-android-stepNine .number1{left: 14px;top: 70px;}
+.event-android-stepNine .number2{left: 156px;top: 153px;}
+.event-android-stepNine .number3{left: 323px;top: 150px;}
+.event-android-stepNine .number4{left: 472px;top: 70px;}
+.event-android-stepNine .number5{left: 630px;top:8px;}
+.event-android-stepNine .number6{left: 801px;top:25px;}
+.event-android-stepNine .number7{left: 917px;top:88px;}
+/*text*/
+.event-android-stepNine .text{text-align: center;color: #141414;font-size: 18px;}
+.event-android-stepNine .text1{left: 41px;top: 168px;}
+.event-android-stepNine .text2{left: 149px;top: 252px;}
+.event-android-stepNine .text3{left: 330px;top: 248px;}
+.event-android-stepNine .text4{
+    left: 480px;
+    top: 168px;}
+.event-android-stepNine .text5{left: 610px;
+    top: 104px;}
+.event-android-stepNine .text6{left: 816px;top: 124px;}
+.event-android-stepNine .text7{left: 948px;
+    top: 186px;}
+/*day*/
+.event-android-stepNine .day{font-size: 18px;font-family: 微软雅黑;color: #999999;}
+.event-android-stepNine .day1{left: 70px;top: 127px;}
+.event-android-stepNine .day2{left: 263px;top: 127px;}
+.event-android-stepNine .day3{left: 434px;
+    top: 127px;
+    width: 80px;}
+.event-android-stepNine .day4{left: 645px;
+    top: 127px;}
+.event-android-stepNine .day5{left: 837px;
+    top: 127px;}
+.event-android-stepNine .day6{left: 845px;
+    top: 350px;}
+.event-android-stepNine .day7{left: 650px;
+    top: 350px;}
+.event-android-stepNine .day8{left: 460px;top: 350px;}
+.event-android-stepNine .day9{left: 268px;top: 350px;}
+.event-android-stepNine .day10{left: 75px;top: 350px;}
+.event-android-stepNine .active{color: #57197c;}
+.event-android-stepNine .active-border{color: #57197c;border:3px solid #57197c;}
+.event-android-stepNine .number em {font-style: normal;}
+.event-android-stepNine .number em:nth-child(2) {display: none;color: #fff;font-size: 22px;}
+.event-android-stepNine .lessonNull.active-border {background: #57197C;-webkit-transform: scale(1.06);-moz-transform: scale(1.06);transform: scale(1.06);}
+.event-android-stepNine .lessonNull.active-border em:nth-child(1) {display:none}
+.event-android-stepNine .lessonNull.active-border em:nth-child(2) {display: inline;}
+
+
+a.button{color: #fff !important;}
+a.button:hover{background: #6f5598;}
+.ue-index-course-box{width: 920px;margin:0 auto;}
+.ue-video-list-box{width:220px;float: left;margin: 0 4px;}
+
+
+.event-android-top h1
+{ font-size:48px; color: #141414; font-weight: normal}
+
+.event-android-top p {font-size: 24px;color: #999999;}
+.event-android-teamVsJike p{ color: #999;
+    font-size: 14px;
+    padding-top: 5px;}
+.lesson-card{width:846px; margin: 0 auto; margin-top: 30px;}
+.lesson-card2{width:408px; margin: 0 auto;margin-top: 30px;}
+.lesson-card .onecard{ width:147px;height:65px;border:1px solid #ccc; float: left; text-align: center;padding: 20px;border-radius: 5px;}
+.lesson-card .onecard i{width: 32px;height:32px; display:inline-block; background: url("./static/images/bootstrap/bootstrap-icon.png") 0px 0px no-repeat}
+.lesson-card .onecard i.sf{ background-position: 0 -33px;}
+.lesson-card .onecard i.sx{ background-position: 0 -65px;}
+.lesson-card .onecard i.talk{ background-position: 0 -98px;}
+.lesson-card .onecard i.j-down{background-position: 0 }
+.lesson-card h3{ color: #999; font-size: 24px; margin-bottom: 30px; font-weight: normal}
+.lesson-card2 .onecard{ width:147px;height:65px;border:1px solid #ccc; float: left; text-align: center;padding: 20px;border-radius: 5px;}
+.lesson-card2 .onecard i{width: 32px;height:32px; display:inline-block; background: url("./static/images/bootstrap/bootstrap-icon.png") 0px 0px no-repeat}
+.lesson-card2 .onecard i.sf{ background-position: 0 -35px;}
+.lesson-card2 .onecard i.sx{ background-position: 0 -68px;}
+.lesson-card2 .onecard i.talk{ background-position: 0 -101px;}
+.lesson-card2 .onecard i.j-down{ background-position: 0 -131px;}
+.lesson-card2 .onecard i.j-source{ background-position: 0 -165px;}
+
+.lesson-card2 h3{ color: #999; font-size: 26px; margin-bottom: 30px; font-weight: normal}
+.mar-r30{ margin-right: 30px;}
+.mar-r40{ margin-right: 40px;}
+.mar-t60{margin-top:60px}
+
+.user-talk{width:1100px; margin-left:auto; margin-right: auto;}
+.user-talk .talk-one{  width:340px; float: left;}
+.user-talk .talk-one .borderbox{  padding: 15px; border-radius: 40px; border:1px solid #548cbc; color: #fff;}
+
+.user-talk .talk-one img{ float: left; margin-right: 10px;width:74px;height:74px;}
+.user-talk p{ font-size: 12px;
+    margin-top: 15px;
+    text-align: left;}
+.user-talk .name{ text-align: right;font-size: 12px; margin-top: 10px}
+.user-talk .talk-one .infor{margin-top:50px;}
+.user-talk .talk-one .infor strong{ color: #fff; text-align: center;width: 100%;display: block;font-size: 24px;font-weight: normal;}
+.user-talk .talk-one .infor p{ text-align: center;font-size: 18px; color: #fff; font-weight: normal；}
+.padding-b100{padding-bottom: 100px;}
+
+
+
+.ue-index-course-box,.lesson-list,.lesson-list > ul { width: 1100px; }
+.lesson-infor p { text-align: left; }
+.lesson-card .onecard,.lesson-card2 .onecard { box-sizing:content-box; -webkit-box-sizing:content-box;-moz-box-sizing:content-box;}
+.gxq-html5{  text-align: center; display: block; text-align: center; margin:60px 0 100px 0;}
+.gxq-html5 a,.gxq-html5 a:hover,.gxq-html5 a:visited{color: #349fd0; font-size: 14px; text-decoration: underline;}
