@@ -3,6 +3,20 @@ var router = express.Router();
 //var User = require('../datadb/mongoose');
 var db = require('../datadb/mongojs');
 var mongojs = require('mongojs');
+var Person = require('../datadb/mybackbone');
+
+function MakePerson(){
+	var person = new Person({
+		name: "Thomas",
+		age: 67,
+		child:"Ryan"
+	});
+
+	var age = person.get("age");
+	person.set({age: 33});
+
+	console.log(person.toJSON());
+}
 
 /* GET users listing. */
 router.get('/userlist', function(req, res, next) {
@@ -15,7 +29,9 @@ router.get('/userlist', function(req, res, next) {
 	}, this);
   });*/
 
-  db.userlist.find({}, function (err, users) {
+	//MakePerson();
+
+	db.userlist.find({}, function (err, users) {
 	  if (users) {
 		  users.forEach(function (element) {
 			  console.log(element);

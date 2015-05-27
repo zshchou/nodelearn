@@ -39,14 +39,20 @@ block content
         // USER LIST
         h2 User List
         .table-responsive
-            table.table.table-hover
+            table.table.table-hover(border="1", caption="从Mongo取到的数据")
                 thead
                     tr
                         td.active #
                         td.success Name
                         td.warning Email
-                        td.info Delete?
+                        td.info 页眉
                 tbody
+                tfoot
+                    tr
+                        td.active
+                        td.success
+                        td.info
+                        td.info 页脚
         // /USER LIST
 
         // ADD USER
@@ -79,3 +85,23 @@ block content
                         img(src='./static/images/bootstrap/wechatlogo.png', alt='微信登录')
                     a(href='http://passport.jikexueyuan.com/connect/weibo')
                         img(src='./static/images/bootstrap/weibologo.png', alt='微博登录')
+
+        // Button trigger modal
+        button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+            | Launch demo modal
+        // Modal
+        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel.modal-title Modal title
+                    .modal-body
+                        p One fine body…
+                    .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                        button#deleteRecord.btn.btn-primary(type='button', data-dismiss='modal') Delete
+
+        p
+            a(href='backbone') Backbone

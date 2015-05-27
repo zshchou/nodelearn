@@ -39,6 +39,9 @@ router.get('/about', function(reg, res){
   res.render('about', {title: '关于'})
 })
 
+router.get('/backbone', function(reg, res){
+  res.render('backbone', {title: 'Backbone测试'})
+})
 
 router.get('/post', function (req, res) {
   res.render('post', {title: 'post'})

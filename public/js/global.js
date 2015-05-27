@@ -1,13 +1,18 @@
 // Userlist data array for filling in info box
 var userListData = [];
-        
+console.log("populateTable");
+
 // DOM Ready =============================================================
 $(document).ready(function() {
     // Add User button click
     $('#btnAddUser').on('click', addUser);
 
+    $('#deleteRecord').on('click', 'td a.linkdeleteuser', deleteUser);
+
     // Populate the user table on initial page load
+    //console.log("populateTable");
     populateTable();
+   // MakePersion();
 
 });
 
